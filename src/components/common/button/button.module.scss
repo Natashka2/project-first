@@ -1,0 +1,54 @@
+@import '../../../styles/variables';
+
+.button {
+  font-size: 16px;
+  margin: 0;
+  text-transform: none;
+  font-weight: normal;
+
+  &_theme {
+    &Primary {
+      --background: var(--color-primary);
+    }
+
+    &Black {
+      --background: var(--color-black);
+    }
+  }
+
+  &_size {
+    &Small {
+      --border-radius: 8px;
+      --padding-start: 10px;
+      --padding-end: 10px;
+      font-family: $font-default;
+      height: 44px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      ion-icon {
+        transform: translateX(-5px);
+        padding-left: 5px;
+      }
+    }
+
+    &Medium {
+      --border-radius: 13px;
+      font-family: $font-office-demi;
+      height: 56px;
+      letter-spacing: 0;
+    }
+  }
+
+  &_disabled {
+    --background: var(--color-grey-1);
+    --color: var(--color-white);
+    --box-shadow: none;
+    opacity: 1;
+  }
+
+  ion-icon {
+    width: 1.6em;
+    font-size: 1.1em;
+    flex-shrink: 0;
+  }
+}

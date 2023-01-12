@@ -1,0 +1,63 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.page {
+  --ion-toolbar-background: var(--ion-color-light);
+
+  &__header {
+    &:after {
+      background: none;
+      bottom: 0;
+      opacity: 0.15;
+      border-bottom: 1px solid $black;
+    }
+  }
+
+  &__toolbar {
+    display: flex;
+    align-items: flex-end;
+    height: 74px;
+  }
+
+  &__backIcon {
+    --icon-font-size: 26px;
+    --icon-padding-end: 4px;
+    --icon-padding-start: 10px;
+    font-size: 16px;
+    letter-spacing: 0.8px;
+    color: $dark;
+  }
+
+  &__logo {
+    padding-top: $space;
+  }
+
+  &__container {
+    display: flex;
+    min-height: 100%;
+  }
+
+  &__content {
+    width: 100%;
+    background-color: $white;
+    @include tablet {
+      padding-bottom: 32px;
+    }
+
+    &_fullScreen {
+      background-color: transparent;
+    }
+
+    &:not(.page__content_fullScreen) {
+      @include tablet {
+        max-width: calc(100% - 100px);
+        margin: 40px auto;
+        border-radius: 25px;
+      }
+
+      @include desktop {
+        max-width: 900px;
+      }
+    }
+  }
+}

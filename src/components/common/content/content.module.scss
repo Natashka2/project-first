@@ -1,0 +1,44 @@
+@import '../../../styles/variables';
+@import '../../../styles/mixins';
+
+.content {
+  display: flex;
+  flex-direction: column;
+
+  &__inner {
+    margin: 0 auto;
+    width: 374px;
+    max-width: 100%;
+    padding: 0 8px;
+    @include tablet {
+      max-width: 450px;
+      padding: 0 $space;
+      box-sizing: content-box;
+    }
+
+    &_spacing {
+      &Default {
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+      &Narrow {
+        padding: 10px 20px;
+      }
+      &Large {
+        padding: 26px 20px;
+      }
+    }
+  }
+
+  &_background {
+    &Transparent {
+      background-color: transparent;
+    }
+    &Grey {
+      background-color: $grey-1;
+    }
+    &Light {
+      background-color: $light;
+    }
+  }
+}

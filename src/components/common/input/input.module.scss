@@ -1,0 +1,43 @@
+@import '../../../styles/variables';
+
+.input {
+  display: flex;
+  flex-direction: column;
+
+  &__control {
+    --placeholder-color: var(--color-medium);
+    --placeholder-opacity: 1;
+    --padding-start: 20px;
+    font-size: 16px;
+    margin: 0;
+    text-transform: none;
+    font-weight: normal;
+
+    &_style {
+      &Grey {
+        --background: var(--color-grey-1) !important;
+      }
+
+      &Transparent {
+        --background: transparent !important;
+      }
+    }
+
+    &_bordered {
+      border-bottom: 1px solid $grey-2;
+    }
+
+    &_disabled {
+      pointer-events: none;
+    }
+  }
+
+  &__error {
+    color: $primary;
+    padding-left: 20px;
+    font-size: 13px;
+    line-height: 13px;
+    margin-bottom: 6px;
+    display: block;
+  }
+}

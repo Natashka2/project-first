@@ -1,0 +1,75 @@
+@import '../../../styles/variables';
+
+.text {
+  margin: 0 0 $space;
+
+  &_color {
+    &Black {
+      color: $black;
+    }
+    &Dark {
+      color: $dark;
+    }
+    &Light {
+      color: $light;
+    }
+    &Primary {
+      color: $primary;
+    }
+    &Tone4 {
+      color: $tone-4;
+    }
+  }
+
+  &_heading {
+    font-family: $font-office-medium;
+    margin: 0 0 $space;
+
+    &1 {
+      font-size: 20px;
+      line-height: 24px;
+    }
+
+    &2 {
+      font-size: 16px;
+      line-height: 19px;
+      letter-spacing: 1px;
+    }
+
+    &3 {
+      font-family: $font-default;
+      font-size: 16px;
+      font-weight: 700;
+      letter-spacing: 0.7px;
+    }
+  }
+
+  &_centered {
+    text-align: center;
+  }
+
+  &_inline {
+    display: inline-flex;
+  }
+
+  &_noMargin {
+    margin-bottom: 0;
+  }
+
+  &_twoColumns {
+    width: 100%;
+    display: grid;
+    grid-template-areas: 'left right';
+    gap: $space * 2;
+
+    *:nth-child(odd) {
+      grid-area: 'left';
+      text-align: left;
+    }
+
+    *:nth-child(even) {
+      grid-area: 'right';
+      text-align: right;
+    }
+  }
+}

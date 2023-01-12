@@ -1,0 +1,30 @@
+// Color palette
+$primary: var(--color-primary);
+$accent: var(--color-accent);
+$tone-1: var(--color-tone-1);
+$tone-2: var(--color-tone-2);
+$tone-3: var(--color-tone-3);
+$tone-4: var(--color-tone-4);
+$tone-5: var(--color-tone-5);
+$light: var(--color-light);
+$medium: var(--color-medium);
+$dark: var(--color-dark);
+$grey-1: var(--color-grey-1);
+$grey-2: var(--color-grey-2);
+$grey-3: var(--color-grey-3);
+$white: var(--color-white);
+$black: var(--color-black);
+$danger-1: var(--color-danger-1);
+$danger-2: var(--color-danger-2);
+
+// Space
+$space: 16px;
+$radius: 13px;
+
+// Font
+$font-office-demi: 'Arial';
+$font-office-medium: 'officeworksprintmedium';
+$font-default: 'Arial';
+
+// Motion
+$transition: 0.3s ease;
